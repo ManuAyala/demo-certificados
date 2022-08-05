@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /prueba/equis/certt/404na.html [L]
+# modificar en la linea 3 la url/irl a mostrar mensaje de no encontrado por ejemplo.com/certt/404na.html

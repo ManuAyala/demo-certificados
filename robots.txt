@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /certt
+Disallow: /conff
+Disallow: /imagg
+Disallow: /md.html
+Allow: /index.html

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        body {text-align: center;}
+    </style>
+    <title>Certificado</title>
+</head>
+<body>
+    <p><em>Por favor a continuacion ingrese su numero de cedula de identidad.</em></p>
+    <div> <form name="formulario" id="formulario">          
+        <p><input name="cedula" type="tel" size="10" placeholder="# CEDULA" autofocus/></p>         
+        <p><input name="botoncito" type="button" onclick="pdf_descarga()" value="Descargar certificado"/></p>            
+    </form> 
+</div>
+</body>
+<script language="JavaScript" type="text/javascript">
+    function pdf_descarga(){
+        cedula = document.formulario.cedula.value;
+        window.location.href="certt/"+cedula+".pdf"
+    }
+    </script>
+</html>
